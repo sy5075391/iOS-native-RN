@@ -1,8 +1,10 @@
 import React from 'react';
 import {Text, View, Button, NativeModules} from 'react-native';
 import {createBottomTabNavigator, createAppContainer, createStackNavigator} from 'react-navigation';
+
 import MyTablView from './MyTableView'
-class HomeScreen extends React.Component {
+
+export class HomeScreen extends React.Component {
     static navigationOptions = ({ navigation }) => {
 
     };
@@ -12,7 +14,7 @@ class HomeScreen extends React.Component {
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 
                 <Button
-                    title="下一页去跳转原生界面"
+                    title={"下一页去跳转原生界面" + this.props.itemId}
                     onPress={() => {
                         /* 1. Navigate to the Details route with params */
                         this.props.navigation.navigate('Details', {

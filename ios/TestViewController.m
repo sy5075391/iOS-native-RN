@@ -33,7 +33,7 @@
     [self createDefaultData];
     // 初始化界面
     [self createUI];
-    [[ReactRootViewManager manager] preLoadRootViewWithName:@"TestPageName" initialProperty:@{@"itemId":@"123"}];
+    [[ReactRootViewManager manager] preLoadRootViewWithName:@"TestPageName" initialProperty:@{@"itemId":@"AAAAAA"}];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -39,7 +39,6 @@
 - (instancetype)init {
   if (self = [super init]) {
     _rootViewMap = [NSMutableDictionary dictionaryWithCapacity:0];
-    _bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
   }
   return self;
 }
@@ -67,8 +66,6 @@
 }
 
 #pragma mark - RCTBridgeDelegate
-- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge {
-  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-}
+
 
 @end

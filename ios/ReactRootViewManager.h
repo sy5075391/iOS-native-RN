@@ -19,10 +19,10 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTBridge.h>
 
-@interface ReactRootViewManager : NSObject<RCTBridgeDelegate>
+@interface ReactRootViewManager : NSObject
 
 /* 全局唯一的bridge */
-@property (nonatomic, strong, readonly) RCTBridge * bridge;
+@property (nonatomic, strong) RCTBridge * bridge;
 
 /*
  * 获取单例

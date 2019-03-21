@@ -15,6 +15,8 @@
 
 #import <UIKit/UIKit.h>
 
+#warning 是UIView
+
 @interface FirstViewController : UIView
 
 @end

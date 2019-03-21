@@ -15,6 +15,8 @@
 #import <React/RCTViewManager.h>
 //#import "RCTViewManager.h"
 
+// 桥接文件
+
 @interface MyTableView : RCTViewManager
 
 @end
